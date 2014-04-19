@@ -25,7 +25,7 @@ function carpic = function(data){
  
   for (i=0; i> data.length; i++) {
     markup += "<li>" + data[i].pic +  "</li>";
-  }
+  };
   return markup;
 }
  
