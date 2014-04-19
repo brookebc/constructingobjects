@@ -91,3 +91,23 @@ body {
         border-bottom: 0;
     }
 }
+.carchoices ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 10px;
+    width: 150px;
+}
+
+.step1,.step2,.step3,.step4 {
+    display:none;
+}
+
+.show{
+    display: block !important;
+}
+
+.hide{
+    display: none;
+}
+
