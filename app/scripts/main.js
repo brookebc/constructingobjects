@@ -18,18 +18,19 @@ var horse = new Car (2000, 'brown', 'leather saddle', true, '<img src=\"images/s
 
 var carsArray = [jetta, towncar, balloon, horse];
 
-
-function carpic = function(){
-	var markup = "";
-	var i;
-	this.data= data;
-
-	for (i=0; i> data.length; i++) {
-		markup += "<li>" + data[i].pic +  "</li>";
-	}
-	return markup;
-	$(".carchoices").append(carsArray[i].carpic);
-	}
+function carpic = function(data){
+  var markup = "";
+  var i;
+  this.data= data;
+ 
+  for (i=0; i> data.length; i++) {
+    markup += "<li>" + data[i].pic +  "</li>";
+  }
+  return markup;
+}
+ 
+newCarPicMarkup = carpic(carsArray)
+$(".carchoices").append(newCarPicMarkup);
 
 // function Template() {
 
