@@ -14,12 +14,12 @@ function Car (year, interior, paintcolor, forsale, pic) {
 var jetta = new Car(2003, 'black', 'blue-green', false, '<img src=\"images/jetta-red.jpeg\">');
 var towncar = new Car(2020, 'purple leather', 'camelion', true, '<img src=\"images/blacknyellow-royce.jpeg\">');
 var balloon = new Car(2012, 'suede', 'red', true, '<img src=\"images/hot-air-balloon.jpeg\">');
-var horse = new Car (2000, 'brown' 'leather saddle', true, '<img src=\"images/speedy-horse.jpeg\">');
+var horse = new Car (2000, 'brown', 'leather saddle', true, '<img src=\"images/speedy-horse.jpeg\">');
 
 var carsArray = [jetta, towncar, balloon, horse];
 
 
-Car.prototype.carpic = function(){
+function carpic = function(){
 	var markup = "";
 	var i;
 	this.data= data;
@@ -28,7 +28,7 @@ Car.prototype.carpic = function(){
 		markup += "<li>" + data[i].pic +  "</li>";
 	}
 	return markup;
-	$(".carchoices").append(Car.prototype.carpic);
+	$(".carchoices").append(carsArray[i].carpic);
 	}
 
 // function Template() {
